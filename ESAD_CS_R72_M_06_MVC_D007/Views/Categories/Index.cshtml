@@ -7,9 +7,9 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create", new {@class= "btn btn-success"})
 </p>
-<table class="table">
+<table class="table table-striped">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.cName)
@@ -23,9 +23,9 @@
             @Html.DisplayFor(modelItem => item.cName)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.cId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.cId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.cId })
+            <a href="@Url.Action("Edit","Categories", new {id = item.cId})" class="btn btn-outline-success " > <i class="fa fa-edit"></i>Edit</a>
+            <a href="@Url.Action("Details","Categories", new {id = item.cId})" class="btn btn-success " > <i class="fa fa-deaf"></i>Details</a>
+            <a href="@Url.Action("Delete","Categories", new {id = item.cId})" class="btn btn-danger "> <i class="fa fa-trash"></i>Delete</a>
         </td>
     </tr>
 }

@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ToysController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -138,6 +139,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DbModels.cs" />
+    <Compile Include="Models\ViewModel\ToyVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +165,16 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\1c62b90046287b13501ff985d850c45d.jpg" />
+    <Content Include="Images\639305133055220794.jpg" />
+    <Content Include="Images\639305134918836644.png" />
+    <Content Include="Images\639305165220545305.jpg" />
+    <Content Include="Images\639305166561980513.jpg" />
+    <Content Include="Images\AGE-0to3.jpg" />
+    <Content Include="Images\demo.gif" />
+    <Content Include="Images\twitter.png" />
+    <Content Include="Images\zS0XkWVps1.gif" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -174,6 +186,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="Views\Shared\_success.cshtml" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -204,6 +217,11 @@
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Toys\Index.cshtml" />
+    <Content Include="Views\Toys\Create.cshtml" />
+    <Content Include="Views\Toys\_success.cshtml" />
+    <Content Include="Views\Toys\_error.cshtml" />
+    <Content Include="Views\Shared\_error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
